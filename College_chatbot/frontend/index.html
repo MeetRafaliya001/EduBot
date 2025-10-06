@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <title>EduBot</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="chatbot-toggle" id="chatToggle" onclick="toggleChat()">💬</div>
+
+<div class="chatbot-container" id="chatContainer">
+  <div class="chatbot-header">
+    Indrashil Edubot
+    <span class="chatbot-close" onclick="toggleChat()">✖</span>
+  </div>
+
+  <div class="chatbot-body" id="chatBody">
+    <div class="chatbot-message bot-message">👋 Hi there! Welcome to Indrashil Chatbot.</div>
+    <div class="chatbot-message bot-message">How can I assist you today?</div>
+
+
+    <div class="chatbot-options">
+      <button class="option" onclick="sendMessage('Campus Related Enquiry')">🎓 Campus Related Enquiry</button>
+      <button class="option" onclick="sendMessage('Courses & Programs Related Enquiry')">📚 Courses & Programs Related Enquiry</button>
+      <button class="option" onclick="sendMessage('Fee Structure & Scholarships Related Enquiry')">💰 Fee Structure & Scholarships</button>
+      <button class="option" onclick="sendMessage('Events & Activities Related Enquiry')">🎉 Events & Activities</button>
+      <button class="option" onclick="sendMessage('Placements & Internships Related Enquiry')">💼 Placements & Internships</button>
+      <button class="option" onclick="sendMessage('Contact Information Related Enquiry')">📞 Contact Information</button>
+      <button class="option" onclick="sendMessage('Exams & Results Related Enquiry')">📝 Exams & Results</button>
+      <button class="option" onclick="sendMessage('Hostel & Mess Related Enquiry')">🏠 Hostel & Mess</button>
+    </div>
+
+
+    <div class="chatbot-sub-options" id="subOptions"></div>
+  </div>
+
+  <div class="chatbot-input-area">
+    <input type="text" id="userInput" placeholder="Write a message" />
+    <button onclick="handleUserInput()">➤</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
